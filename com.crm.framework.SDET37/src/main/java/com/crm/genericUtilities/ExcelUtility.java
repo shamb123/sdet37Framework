@@ -4,9 +4,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.Format;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -40,7 +42,8 @@ public class ExcelUtility {
 		Sheet sheet = workbook.getSheet(sheetName);
 		Row row = sheet.getRow(rowNum);
 		Cell cell = row.getCell(cellNum);
-		String data = cell.toString();
+		DataFormatter dataf = new DataFormatter();
+		String data = dataf.formatCellValue(cell);
 		return data;
 	}
 	/**
@@ -79,5 +82,18 @@ public class ExcelUtility {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
-}
+	public String fetchDataFromExcel(String sheetName,int rownum, int cellnum) throws Throwable {
+
+		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\Sdet37TestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+		 Cell result = wb.getSheet(sheetName).getRow(rownum).getCell(cellnum);
+				DataFormatter dataformatter= new DataFormatter();
+			return dataformatter.formatCellValue(result);
+			
+		}
+		
+		
+	}
+

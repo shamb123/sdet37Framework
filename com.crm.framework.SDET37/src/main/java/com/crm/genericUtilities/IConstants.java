@@ -12,4 +12,5 @@ public interface IConstants
 	int implicitlyWaitDuration=10;
 	int explicitWaitDuration=10;
 	int scriptTimeOutDuration=10;
+	String path="‪C:\\Users\\Shambhavi Patil\\Pictures\\Capture.PNG";
 }

@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.crm.objectRepository.HomePage;
+import com.crm.objectRepository.HomePage_owner;
 import com.crm.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -88,18 +88,18 @@ public class BaseClass
 	/**
 	 * login to application
 	 */
-	@BeforeMethod
+	@BeforeMethod(enabled=false)
 	public void loginToAppln()
 	{
 		String USERNAME = null;
 		try {
-			USERNAME = fLib.getPropertKeyValue("username");
+			USERNAME = fLib.getPropertKeyValue("username_owner");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		String PASSWORD = null;
 		try {
-			PASSWORD = fLib.getPropertKeyValue("password");
+			PASSWORD = fLib.getPropertKeyValue("password_owner");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
@@ -111,17 +111,17 @@ public class BaseClass
 	/**
 	 * logout from application
 	 */
-	@AfterMethod
+	@AfterMethod(enabled=false)
 	public void logoutFromAppln()
 	{
-		HomePage hpage=new HomePage(driver);
-		hpage.logout(driver);
+		HomePage_owner hpage=new HomePage_owner(driver);
+		hpage.logoutBtn();
 		System.out.println("Logout successful");
 	}
 	/**
 	 * close the browser
 	 */
-	@AfterClass
+	@AfterClass()
 	public void closeTheBrowser()
 	{
 		driver.quit();

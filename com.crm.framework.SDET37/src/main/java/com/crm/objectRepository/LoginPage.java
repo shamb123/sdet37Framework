@@ -8,15 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	//declaretion
-	@FindAll({@FindBy(xpath = "//input[@type='text']"),@FindBy(name = "user_n")})
-	//@FindBys({@FindBy(xpath = "//input[@type='text']"),@FindBy(name = "user_name")})
+	
+	@FindBy(id = "exampleInputEmail1")
 	private WebElement usernametxtEdt;
 
-	@FindBy(name = "user_password")
+	@FindBy(id = "exampleInputPassword1")
 	private WebElement passwordtxtEdt;
 
 
-	@FindBy(id = "submitButton")
+	@FindBy(name = "login")
 	private WebElement submitBtn;
 
 	//initialization
