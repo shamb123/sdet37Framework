@@ -88,18 +88,22 @@ public class BaseClass
 	/**
 	 * login to application
 	 */
-	@BeforeMethod(enabled=false)
+	@BeforeMethod()
 	public void loginToAppln()
 	{
+		
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.loginLink();
+		
 		String USERNAME = null;
 		try {
-			USERNAME = fLib.getPropertKeyValue("username_owner");
+			USERNAME = fLib.getPropertKeyValue("username");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		String PASSWORD = null;
 		try {
-			PASSWORD = fLib.getPropertKeyValue("password_owner");
+			PASSWORD = fLib.getPropertKeyValue("password");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}

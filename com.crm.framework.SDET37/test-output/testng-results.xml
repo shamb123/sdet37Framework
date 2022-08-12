@@ -1,197 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-12T09:57:30 IST" name="Default suite" finished-at="2022-08-12T09:58:20 IST" duration-ms="49866">
+  <suite started-at="2022-08-12T11:52:20 IST" name="Default suite" finished-at="2022-08-12T11:52:56 IST" duration-ms="36052">
     <groups>
     </groups>
-    <test started-at="2022-08-12T09:57:30 IST" name="Default test" finished-at="2022-08-12T09:58:20 IST" duration-ms="49866">
+    <test started-at="2022-08-12T11:52:20 IST" name="Default test" finished-at="2022-08-12T11:52:56 IST" duration-ms="36052">
       <class name="com.crm.CreateOwner.CreateOwnerAndVerify">
-        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:57:30 IST" name="dbConfig" finished-at="2022-08-12T09:57:30 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:20 IST" name="dbConfig" finished-at="2022-08-12T11:52:20 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dbConfig -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:57:30 IST" name="launchTheBrowser" finished-at="2022-08-12T09:58:07 IST" duration-ms="37008" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:20 IST" name="launchTheBrowser" finished-at="2022-08-12T11:52:39 IST" duration-ms="18522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method retried="true" signature="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:07 IST" name="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList" finished-at="2022-08-12T09:58:17 IST" duration-ms="9926" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null
-at com.crm.genericUtilities.ExcelUtility.readDataFromExcel(ExcelUtility.java:43)
-at com.crm.CreateOwner.CreateOwnerAndVerify.VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList(CreateOwnerAndVerify.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:39 IST" name="loginToAppln" finished-at="2022-08-12T11:52:40 IST" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:40 IST" name="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList" finished-at="2022-08-12T11:52:56 IST" duration-ms="15801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList -->
-        <test-method retried="true" signature="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:17 IST" name="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList" finished-at="2022-08-12T09:58:18 IST" duration-ms="803" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null
-at com.crm.genericUtilities.ExcelUtility.readDataFromExcel(ExcelUtility.java:43)
-at com.crm.CreateOwner.CreateOwnerAndVerify.VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList(CreateOwnerAndVerify.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList -->
-        <test-method retried="true" signature="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:18 IST" name="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList" finished-at="2022-08-12T09:58:18 IST" duration-ms="565" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null
-at com.crm.genericUtilities.ExcelUtility.readDataFromExcel(ExcelUtility.java:43)
-at com.crm.CreateOwner.CreateOwnerAndVerify.VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList(CreateOwnerAndVerify.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList -->
-        <test-method signature="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:18 IST" name="VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList" finished-at="2022-08-12T09:58:19 IST" duration-ms="299" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null
-at com.crm.genericUtilities.ExcelUtility.readDataFromExcel(ExcelUtility.java:43)
-at com.crm.CreateOwner.CreateOwnerAndVerify.VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList(CreateOwnerAndVerify.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTheOwnerCreatedRoomDetailsinTheRegisterdRoomList -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:19 IST" name="closeTheBrowser" finished-at="2022-08-12T09:58:20 IST" duration-ms="972" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:56 IST" name="closeTheBrowser" finished-at="2022-08-12T11:52:56 IST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDBconfig()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@4c60d6e9]" started-at="2022-08-12T09:58:20 IST" name="closeDBconfig" finished-at="2022-08-12T09:58:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDBconfig()[pri:0, instance:com.crm.CreateOwner.CreateOwnerAndVerify@196a42c3]" started-at="2022-08-12T11:52:56 IST" name="closeDBconfig" finished-at="2022-08-12T11:52:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDBconfig -->

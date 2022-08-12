@@ -18,6 +18,9 @@ public class LoginPage {
 
 	@FindBy(name = "login")
 	private WebElement submitBtn;
+	
+	@FindBy(xpath = "//a[.='Login']")
+	private WebElement loginLnk;
 
 	//initialization
 	public LoginPage(WebDriver driver)
@@ -34,6 +37,10 @@ public class LoginPage {
 
 	public WebElement getPasswordtxtEdt() {
 		return passwordtxtEdt;
+	}
+	
+	public WebElement getLoginLnk() {
+		return loginLnk;
 	}
 
 	public WebElement getSubmitBtn() {
@@ -53,4 +60,9 @@ public class LoginPage {
 		passwordtxtEdt.sendKeys(password);
 		submitBtn.click();
 	}
+	
+	public void loginLink() {
+		loginLnk.click();
+	}
 }
+
