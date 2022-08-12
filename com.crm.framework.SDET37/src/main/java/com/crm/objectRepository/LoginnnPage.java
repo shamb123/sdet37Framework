@@ -24,12 +24,19 @@ public class LoginnnPage {
   @FindBy(xpath="//button[@name='search']")
   private WebElement searchEdtBtn;
   
+  @FindBy(xpath="//input[@name='keywords']")
+  private WebElement keywordEdt;
+  
   public WebElement getRegisterbtnn() {
 	return registerbtnn;
 }
 
 public WebElement getLoginbtn() {
 	return loginbtn;
+}
+
+public WebElement getKeywordEdt() {
+	return keywordEdt;
 }
 
 public WebElement getSearchTxtBox() {
@@ -60,5 +67,8 @@ public void searchButton() {
 	  searchEdtBtn.click();
 	  
   }
-  
+  public void searchKeyword (String keyword) {
+	  keywordEdt.sendKeys(keyword);
+	  
+  }
 }

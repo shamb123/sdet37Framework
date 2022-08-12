@@ -23,6 +23,10 @@ public class Homepage_Admin {
 	@FindBy(xpath="//b[text()='Registered Users: ']")
 	private WebElement registeredUsers;
 	
+	@FindBy(xpath="//a[text()='Register']")
+	private WebElement registerlnk;
+	
+	
 	
 	public WebElement getRoomsForrentlnk() {
 		return roomsForrentlnk;
@@ -32,6 +36,10 @@ public class Homepage_Admin {
 		return detailsOrUpdateEdtn;
 	}
 	
+	public WebElement getRegisterlnk() {
+		return registerlnk;
+	}
+
 	public WebElement getLogoutbtn() {
 		return logoutbtn;
 	}
@@ -52,5 +60,7 @@ public class Homepage_Admin {
     public void registeredUserLnk() {
     	registeredUsers.click();
     }
-    
+    public void registerLink() {
+    	registerlnk.click();
+    }
 }
