@@ -32,6 +32,10 @@ public class RegisterPage extends WebDriverUtility{
 	@FindBy(id = "address") private WebElement addressEdt;
 	@FindBy(id = "vacant") private WebElement vacantEdt;
 	@FindBy(id ="image") private WebElement imageEdt;
+	@FindBy(xpath = "//a[.='Register']")
+	private WebElement registerLink;
+	@FindBy(xpath = "//a[.='Details/Update']")
+	private WebElement detailsupdatelnk;
 	
 	@FindBy(name = "register_individuals") private WebElement submitbtnEdt;
 	public WebElement getFullNameEdt() {
@@ -91,6 +95,14 @@ public class RegisterPage extends WebDriverUtility{
 	public WebElement getSubmitbtnEdt() {
 		return submitbtnEdt;
 	}
+	public WebElement getRegisterLink() {
+		return registerLink;
+	}
+	
+	public WebElement getDetailsupdatelnk() {
+		return detailsupdatelnk;
+	}
+	
 	
 	public void fullname(String name) {
 		fullNameEdt.sendKeys(name);
@@ -153,6 +165,13 @@ public class RegisterPage extends WebDriverUtility{
 	public void submit() {
 		submitbtnEdt.click();
 	}
+	
+	public void registerLnk() {
+		registerLink.click();
+		
+	}
+	
+	
 		
 	
 	

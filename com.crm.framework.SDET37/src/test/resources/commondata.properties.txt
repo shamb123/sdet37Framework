@@ -1,6 +1,7 @@
 url http://rmgtestingserver/domain/House_Rental_Application/index.php
 username admin
 password admin
-username_owner bloom
-password_owner bloom
+username_owner 
+password_owner
 browser chrome
+
